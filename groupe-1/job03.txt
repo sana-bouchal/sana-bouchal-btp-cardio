@@ -1,0 +1,6 @@
+mkdir test0
+chmod 500 test0
+touch test1
+chmod 451 test1
+ln -s test0 test2
+ls -l
