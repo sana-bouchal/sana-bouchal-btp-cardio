@@ -1,0 +1,7 @@
+grep "POST" logs.txt | grep "192.168.0.2"
+grep -v " 3[0-9][0-9] " logs.txt | grep -v " 4[0-9][0-9] " | grep -v " 5[0-9][0-9] "
+awk '{print $9}' logs.txt
+sort -k1 logs.txt
+awk '{print $1}' logs.txt | sort -u
+sed 's/200/OK_YOLO/g' logs.txt
+awk '{count[$1]++} END {for(ip in count) print ip, count[ip]}' logs.txt
