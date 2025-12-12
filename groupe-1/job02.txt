@@ -1,0 +1,4 @@
+ls -l
+touch yolo3.md
+chmod 224 yolo3.md
+ls -l
